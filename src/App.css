@@ -1,0 +1,91 @@
+
+:root {
+  --color-primary-one: #00B945;
+  --color-primary-two: #238B49;
+  --color-primary-three: #00782D;
+  --color-primary-four: #37DC74;
+  --color-primary-five: #63DC90;
+  --color-secondary-one: #0776A0;
+  --color-secondary-two: #226078;
+  --color-secondary-three: #024C68;
+  --color-secondary-four: #3AA6D0;
+  --color-secondary-five: #62B1D0;
+  --color-third-one: #84E900;
+  --color-third-two: #76AF2C;
+  --color-third-three: #569700;
+  --color-third-four: #A4F43D;
+  --color-third-five: #BAF46E;
+
+  --border-color: var(--color-secondary-two);
+}
+body {
+  background-color: var(--color-primary-one);
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* justify-items: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.App span,
+.App input {
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  padding: 2% 0;
+  background-color: transparent;
+  outline: none;
+  font-size: 60px;
+  width: auto;
+  text-align: center;
+  display: block;
+}
+
+.App label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.App span label {
+
+}
+
+.ip-validation {
+  margin-top: 20px;
+}
+
+.App .mask {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+.block {
+  --main-color: var(--color-primary-two);
+  border: 1px solid var(--main-color);
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+  width: 15vw;
+}
+.block + .block {
+  margin-left: 15px;
+}
+.block h4 {
+  margin: 0;
+
+}
+.block-header {
+  background: var(--main-color);
+  padding: 5px 15px;
+}
+.block-content {
+  padding: 5px 15px;
+  background: var(--color-secondary-two);
+  text-align: left;
+}

@@ -16,6 +16,9 @@
   --color-third-four: #A4F43D;
   --color-third-five: #BAF46E;
 
+  --font-color: #fff;
+  /* --font-color: #114411; */
+
   --border-color: var(--color-secondary-two);
 }
 body {
@@ -30,6 +33,9 @@ body {
   /* justify-items: center; */
   align-items: center;
   flex-direction: column;
+  color: var(--font-color);
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .App span,
@@ -43,6 +49,7 @@ body {
   width: auto;
   text-align: center;
   display: block;
+  color: var(--font-color);
 }
 
 .App label {
@@ -59,10 +66,17 @@ body {
   margin-top: 20px;
 }
 
+.ip-validation {
+  max-width: 960px;
+  width: 100%;
+  /* margin: 0 auto; */
+}
+
 .App .mask {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   justify-items: center;
+  width: 100%;
 }
 .block {
   --main-color: var(--color-primary-two);
@@ -71,7 +85,11 @@ body {
   border-radius: 10px;
   overflow: hidden;
   color: #fff;
-  width: 15vw;
+  width: 24.5%;
+  margin-bottom: 15px;
+}
+.block.col-6 {
+  width: 49.5%;
 }
 .block + .block {
   margin-left: 15px;
